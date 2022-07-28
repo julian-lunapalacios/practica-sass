@@ -1,0 +1,451 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/**fuente general**/
+html { font-family: 'Roboto', sans-serif; }
+
+body {
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    background-color:rgb(0, 0, 0)}
+h1 {font-size: 3.7em; }
+h2 {font-size: 2.8em;}
+h3 {font-size: 2.2em;}
+p  {font-size: 1.8em;;
+color:white;}
+ul {list-style: none;}
+a  {text-decoration: none;}
+.textoSecundario { color: rgb(245,245,245);}
+h4 { text-align: center;}
+
+/* BOTONES */
+
+.boton1{
+    background-color: rgb(110, 206, 196);
+    width: fit-content ;
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 7%;
+    padding: 10px 20px;
+    margin: 15px auto;
+    box-shadow: 2px 2px 10px rgb(245,245,245,0.5);
+}
+.boton1:hover{
+    background-color:rgb(31, 168, 143);
+}
+
+.boton1 a {
+    text-decoration: none;
+    color:rgb(28, 2, 55);
+    font-weight: bold;
+    font-size: 2.8em;
+    height: 15px;
+}
+.boton2{
+    background-color: rgb(110, 206, 196);
+    width: fit-content ;
+    border: solid 3px rgb(28, 2, 55);
+    border-radius: 7%;
+    padding: 10px 20px;
+    margin: 15px auto;
+    box-shadow: 2px 2px 10px rgb(245,245,245,0.5);
+}
+.boton2:hover{
+    background-color:rgb(31, 168, 143);
+}
+.boton2 a {
+    text-decoration: none;
+    color:rgb(28, 2, 55);
+    font-weight: bold;
+    font-size: 1em;
+    height: 15px;
+}
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color:rgb(209, 38, 189) ;
+}
+
+button:hover {
+    background: rgb(158, 25, 143);
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+
+/* CABECERA */
+.container-fluid{
+    background-color: rgb(0, 0, 0);
+}
+.navbar-collapse {
+    flex-grow: initial;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.2em;
+    color:rgb(31, 168, 143)
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(209, 38, 189);
+}
+
+.navbar-toggler-icon {
+    color: aqua;
+
+}
+
+
+
+/* FOOTER */
+/* h4{
+    color: rgb(209, 38, 189);
+    font-size: 1.7em;
+}
+.piepagina {
+display: flex;
+flex-direction:column ;
+text-align: center;
+}
+.piepagina ul{
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.piepagina li { 
+    padding: 5px 5px 5px;
+}
+
+.piepagina a {
+    color:rgb(110, 206, 196);
+    text-decoration: none;
+    font-weight: bold;
+}
+.piepagina a:hover {
+    color:rgb(209, 38, 189);
+}
+ */
+footer .footer_sponsor {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(209, 38, 189);
+    font-size: 2.5em;
+}
+footer .footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+ footer ul {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+footer a {
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(110, 206, 196);
+    font-size: 1.2em;
+}
+footer a:hover {
+    color: rgb(209, 38, 189);
+}
+
+/* general */
+
+h1 { color: rgb(255, 255, 255);}
+h2 {color: rgb(209, 38, 189); } 
+h3 {color:rgb(255, 255, 255) ;
+    text-align: center;}
+.subtitulosSecundarios { color:rgb(209, 38, 189) ;}
+
+.container .logo {
+    height: 100px;}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )  
+    ,url("imagenes/mujer-levanta-pesas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#comunidad .container2 {
+    text-align: center;
+    padding: 190px 15px;
+}
+#comunidad {
+     background-color:black;
+     text-align: center;                  
+}
+#comunidad .container2{
+    padding:140px 0px;
+}
+#comunidad h2 {
+    margin-top: 0px;
+    padding-bottom: 30px;
+}
+#comunidad h3{
+    padding-bottom: 20px;
+}
+#comunidad .opcion{
+    padding:50px;
+    margin: 18px;
+    border-radius: 3%;
+}
+#comunidad p {
+    display: none;
+}
+
+.opcion:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/team-cf.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.opcion:nth-last-child(1){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/hombre-anillas.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/* animacion */
+img { 
+    transition: all 1.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Nuestro Espacio */
+* {
+    box-sizing: border-box;
+    margin: 0 ;
+}
+
+#hero3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )  
+    ,url("imagenes/box-discos-barras.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )  
+    ,url("imagenes/box-alumnos2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )  
+    ,url("imagenes/box-alumnos3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;}
+
+.grid-itemVideo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 3%;
+    transition: 0.5s ease-in-out;
+}
+
+.grid-itemVideo:hover {
+    filter: opacity(0.9);
+    transform: scale(1.02);
+    box-sizing: content-box;
+}
+.gridContainer1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax( 200px, auto);
+    gap: 30px;
+    padding: 30px;  
+}
+.mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mapa:hover {
+    filter:opacity( 0.9);
+    transform: scale(1.02);
+    box-sizing: content-box;
+}
+
+.gridContainer2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200, auto);
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.textoSecundario {
+    text-align: center;
+    text-transform: none;
+}
+
+.subtitulosSecundarios {
+    text-align: center;
+}
+
+/* Contacto */
+
+
+#hero4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )  
+    ,url("imagenes/hombre-levanta-pesas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+label {
+    color: rgb(31, 168, 143);
+}
+legend {
+    color:rgb(209, 38, 189)
+}
+.btn{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgb(209 38 209 / 90%);
+}
+
+/* atletas y staff */
+*{
+    box-sizing: border-box;
+}
+img {
+    width:100%
+}
+.row {
+    display: flex;
+    padding:4px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex:25%;
+    padding: 5px;
+}
+.column img {
+    margin-top: 5px;
+}
+@media (max-width: 550px){
+    .column{
+        flex:100%;
+
+    }
+}
+@media (max-width:750px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@media(min-width:720px) {
+    footer {
+        width: 100%;
+    }
+    footer  .footer_container{
+        flex-direction:row;
+        padding-bottom: 30px;
+        justify-content: space-evenly;
+    }
+    footer ul {
+        flex-direction:row;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 25px;
+
+    }
+
+
+}
